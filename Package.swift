@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
 	name: "LNPopupController",
 	platforms: [
-		.iOS(.v12),
+		.iOS(.v11),
 		.macOS(.v10_15)
 	],
 	products: [
@@ -18,13 +18,11 @@ let package = Package(
 			type: .static,
 			targets: ["LNPopupController"]),
 	],
-	dependencies: [
-        .package(url: "https://github.com/elihwyma/Evander", .branch("main"))
-    ],
+	dependencies: [],
 	targets: [
 		.target(
 			name: "LNPopupController",
-			dependencies: ["Evander"],
+			dependencies: [],
 			path: "LNPopupController",
 			exclude: [
 				"LNPopupControllerExample",
